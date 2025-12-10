@@ -22,7 +22,6 @@
     "@jest/globals": "latest",
     "@testing-library/jest-dom": "latest",
     "@testing-library/react": "latest",
-    "@types/eslint__js": "latest",
     "@types/eslint-config-prettier": "latest",
     "@types/jsdom": "latest",
     "@types/react": "latest",
