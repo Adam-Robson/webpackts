@@ -14,9 +14,9 @@
     "jsx": "react-jsx",
     "resolveJsonModule": true,
     "paths": {
-      "@/*": ["src/*"],
-      "@comps/*": ["src/components/*"],
-      "@utils/*": ["src/utils/*"]
+      "@/*": ["./src/*"],
+      "@comps/*": ["./src/components/*"],
+      "@utils/*": ["./src/utils/*"]
     }
   },
   "include": ["src", "__tests__"],       
