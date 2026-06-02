@@ -19,7 +19,7 @@
 		"@babel/preset-env": "latest",
 		"@babel/preset-react": "latest",
 		"@babel/preset-typescript": "latest",
-		"@biomejs/biome": "2.4.15",
+		"@biomejs/biome": "2.4.16",
 		"@jest/globals": "latest",
 		"@testing-library/jest-dom": "latest",
 		"@testing-library/react": "latest",
