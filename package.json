@@ -15,7 +15,7 @@
 	"license": "",
 	"description": "",
 	"devDependencies": {
-		"@babel/core": "latest",
+		"@babel/core": "^7.29.7",
 		"@babel/preset-env": "latest",
 		"@babel/preset-react": "latest",
 		"@babel/preset-typescript": "latest",
