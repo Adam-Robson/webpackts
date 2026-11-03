@@ -42,8 +42,8 @@
 		"tsx": "latest",
 		"typescript": "latest",
 		"webpack": "latest",
-		"webpack-cli": "latest",
-		"webpack-dev-server": "latest"
+		"webpack-cli": "6.0.1",
+		"webpack-dev-server": "6.1.0"
 	},
 	"dependencies": {
 		"dotenv": "latest",
