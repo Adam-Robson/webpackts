@@ -1,24 +1,47 @@
 {
-	"compilerOptions": {
-		"target": "ES6",
-		"lib": ["DOM", "DOM.Iterable", "ESNext"],
-		"allowJs": true,
-		"skipLibCheck": true,
-		"esModuleInterop": true,
-		"allowSyntheticDefaultImports": true,
-		"strict": true,
-		"forceConsistentCasingInFileNames": true,
-		"module": "ESNext",
-		"moduleResolution": "bundler",
-		"isolatedModules": true,
-		"jsx": "react-jsx",
-		"resolveJsonModule": true,
-		"paths": {
-			"@/*": ["./src/*"],
-			"@comps/*": ["./src/components/*"],
-			"@utils/*": ["./src/utils/*"]
-		}
-	},
-	"include": ["src", "__tests__"],
-	"exclude": ["node_modules", "dist"]
+  "compilerOptions": {
+    // Language & environment
+    "target": "ES2024",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "jsx": "react-jsx",
+    "types": ["node"],
+
+    // Modules
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "moduleDetection": "force",
+    "resolveJsonModule": true,
+    "allowImportingTsExtensions": true,
+    "paths": {
+      "@/*": ["./src/*"],
+      "@assets/*": ["./src/assets/*"],
+      "@comps/*": ["./src/components/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@utils/*": ["./src/utils/*"]
+    },
+
+    // Emit: tsc only type-checks; SWC does all transpiling
+    "noEmit": true,
+
+    // Interop constraints (keep code compatible with SWC and Node type-stripping)
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    "erasableSyntaxOnly": true,
+
+    // Type checking
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noFallthroughCasesInSwitch": true,
+
+    // Completeness
+    "skipLibCheck": true
+  },
+  "include": [
+    "src",
+    "__tests__",
+    "config",
+    "*.config.ts",
+    "vitest.setup.ts"
+  ]
 }
