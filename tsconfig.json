@@ -36,10 +36,5 @@
     // Completeness
     "skipLibCheck": true
   },
-  "include": [
-    "src",
-    "__tests__",
-    "*.config.ts",
-    "vitest.setup.ts"
-  ]
+  "include": ["src", "__tests__", "*.config.ts", "vitest.setup.ts"]
 }
