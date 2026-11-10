@@ -16,7 +16,7 @@
   "description": "",
   "private": true,
   "engines": {
-    "node": ">=22.18"
+    "node": ">=22.22"
   },
   "dependencies": {
     "react": "19.3.1",

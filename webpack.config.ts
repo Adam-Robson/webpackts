@@ -132,6 +132,14 @@ export default (env: Env, argv: Argv): Configuration => {
       isDevServer && new ReactRefreshWebpackPlugin()
     ],
 
+    // Budgets are uncompressed bytes. React 19 + react-router ≈ 310 KB raw
+    // (~100 KB gzip), so webpack's 244 KB default would always warn.
+    performance: {
+      hints: isProd ? 'warning' : false,
+      maxAssetSize: 400_000,
+      maxEntrypointSize: 400_000
+    },
+
     optimization: {
       runtimeChunk: 'single',
       splitChunks: { chunks: 'all' }
