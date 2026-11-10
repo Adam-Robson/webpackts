@@ -2,9 +2,10 @@ import { Layout } from '@comps/Layout';
 import { About } from '@pages/About';
 import { Home } from '@pages/Home';
 import { NotFound } from '@pages/NotFound';
-import { createBrowserRouter, type RouteObject } from 'react-router';
+import type { RouteObject } from 'react-router';
 
-// Exported separately so tests can mount the same tree with createMemoryRouter.
+// Route tree only. The browser router is created in index.tsx, and tests
+// mount this same tree with createMemoryRouter.
 export const routes: RouteObject[] = [
   {
     path: '/',
@@ -16,5 +17,3 @@ export const routes: RouteObject[] = [
     ]
   }
 ];
-
-export const router = createBrowserRouter(routes);
