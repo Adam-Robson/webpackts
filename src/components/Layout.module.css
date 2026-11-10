@@ -1,0 +1,35 @@
+.shell {
+  max-width: 40rem;
+  margin-inline: auto;
+  padding: 2rem 1rem 4rem;
+}
+
+.header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.brand {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.nav {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.nav a {
+  color: var(--color-muted);
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.nav a:hover,
+.nav a[aria-current='page'] {
+  color: var(--color-accent);
+}
